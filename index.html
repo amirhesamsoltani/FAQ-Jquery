@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: a;
+            src: url(vazir-font-v16.1.0/Vazir-Bold.ttf);
+        }
+        body{
+            font-family: a;
+        }
+        h1{
+            padding-right: 20px ;
+        }
+        .q-container{
+            width: 100%;
+        }
+        .q-title{
+            width: 96%;
+            padding: 13px;
+            margin: 0px 10px;
+            background-color: grey;
+            color: rgb(255, 255, 255);
+            border: 3.5px solid rgb(59, 59, 59);
+            border-radius: 15px;
+            font-size: larger;
+            cursor: pointer;
+        }
+        .q-title:hover{
+            color: beige;
+        }
+        .q-text{
+            width: 96%;
+            padding: 13px;
+            margin: 1px 10px;
+            background-color: rgb(182, 182, 182);
+            color: rgb(255, 255, 255);
+            border: 3.5px solid rgb(59, 59, 59);
+            border-radius: 15px;
+            font-size: larger;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>سوال های متداول</h1>
+   <div class="q-container" >
+    <div class="q-title"  id="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;سوال های متداول شما در این باکس پاسخ داده میشود </div>
+    <div class="q-text" style="display: none;"> این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است</div>
+   </div>
+   <div class="q-container" >
+    <div class="q-title"  id="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;سوال های متداول شما در این باکس پاسخ داده میشود </div>
+    <div class="q-text" style="display: none;"> این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است</div>
+   </div>
+   <div class="q-container" >
+    <div class="q-title"  id="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;سوال های متداول شما در این باکس پاسخ داده میشود </div>
+    <div class="q-text" style="display: none;"> این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است</div>
+   </div>
+   <div class="q-container" >
+    <div class="q-title"  id="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;سوال های متداول شما در این باکس پاسخ داده میشود </div>
+    <div class="q-text" style="display: none;"> این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است این پیام برای تست است</div>
+   </div>
+   
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".q-title").click(function(){
+                  let idNum = $(this).attr("id");
+                  $(`#${idNum}`).siblings().slideToggle(1000);
+                    $(`.q-title:not(#${idNum})`).siblings().slideUp();
+                
+            })
+        })
+    </script>
+</body>
+</html>
